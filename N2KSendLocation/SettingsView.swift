@@ -1,5 +1,10 @@
 import SwiftUI
 
+enum HeadingType: String, CaseIterable {
+    case magnetic = "magnetic"
+    case `true` = "true"
+}
+
 struct SettingsView: View {
     @AppStorage("udpClientPort") private var tcpClientPort: Int = 4123
     @AppStorage("udpClientHost") private var tcpClientHost: String = "192.168.1.1"
@@ -7,7 +12,7 @@ struct SettingsView: View {
     @AppStorage("timerEnabled") private var timerEnabled = false
     @AppStorage("timerInterval") private var timerInterval = 3
     @AppStorage("headingEnabled") private var headingEnabled = false
-    @AppStorage("headingType") private var headingType = "true"  // "magnetic" or "true"
+    @AppStorage("headingType") private var headingType: HeadingType = .true
     @Environment(\.dismiss) private var dismiss
     
     var body: some View {
@@ -65,8 +70,8 @@ struct SettingsView: View {
                     }
                     
                     Picker(selection: $headingType, label: Text(NSLocalizedString("heading_type_label", comment: "Heading type picker label"))) {
-                        Text(NSLocalizedString("heading_type_magnetic", comment: "Magnetic heading")).tag("magnetic")
-                        Text(NSLocalizedString("heading_type_true", comment: "True heading")).tag("true")
+                        Text(NSLocalizedString("heading_type_magnetic", comment: "Magnetic heading")).tag(HeadingType.magnetic)
+                        Text(NSLocalizedString("heading_type_true", comment: "True heading")).tag(HeadingType.true)
                     }
                     .disabled(!headingEnabled)
                 }
