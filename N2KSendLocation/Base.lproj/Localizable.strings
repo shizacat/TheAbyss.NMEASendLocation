@@ -37,9 +37,9 @@
 /* Info View */
 "app_info_title" = "App Info";
 "app_description" = "
-NMEASendLocation - this app sends GPS coordinates, current speed and course via WiFi using NMEA 0183 protocol. It can replace a USB GPS receiver.
+NMEASendLocation - this app sends GPS coordinates, current speed and course over ground via WiFi using NMEA 0183 protocol. It can replace a USB GPS receiver.
 
-*Version: 1.0*
+*Version: 1.1*
 
 [Project repository](https://github.com/shizacat/TheAbyss.NMEASendLocation)
 
@@ -51,7 +51,7 @@ NMEASendLocation reads geo data from your iPhone/iPad, forms NMEA 0183 messages 
 
 **Main features:**
 
-• Getting current coordinates, speed and course from GPS module
+• Getting current coordinates, speed and course over ground (CoG) from GPS module
 
 • Forming NMEA 0183 messages
 
