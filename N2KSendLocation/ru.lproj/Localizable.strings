@@ -1,0 +1,79 @@
+/* Common */
+"done_button" = "Готово";
+
+/* Last sent data section */
+"last_sent_data" = "Последние отправленные данные";
+"time_label" = "Время:";
+"latitude_label" = "Широта:";
+"longitude_label" = "Долгота:";
+"status_label" = "Статус:";
+"send_error" = "Ошибки при отправке";
+"location_error" = "Ошибка геолокации";
+"stop_sending" = "Остановить отправку";
+"start_sending" = "Начать отправку";
+"no_time" = "--:--:--";
+"no_coordinate" = "0.000000°";
+
+/* Settings View */
+"udp_settings_header" = "Настройки UDP клиента";
+"server_address_label" = "Адрес сервера";
+"port_number_label" = "Номер порта";
+"server_address_placeholder" = "192.168.1.1";
+"port_placeholder" = "4123";
+"settings_title" = "Настройки";
+/* ___ Error Settings */
+"settings_error_header" = "Настройки ошибок";
+"show_error_history_label" = "Показывать историю ошибок";
+
+/* Timer Settings */
+"timer_settings_header" = "Настройки таймера";
+"enable_timer_label" = "Включить таймер";
+"timer_interval_label" = "Интервал таймера";
+"timer_interval_1s" = "1 секунда";
+"timer_interval_3s" = "3 секунды";
+"timer_interval_5s" = "5 секунд";
+"timer_interval_10s" = "10 секунд";
+
+/* Info View */
+"app_info_title" = "О приложении";
+"app_description" = "
+NMEASendLocation - приложение для отправки GPS координат, текущей скорости и курса через WiFi по протоколу NMEA 0183. Оно может замнеить USB GPS приемник.
+
+*Версия: 1.0*
+
+[Репозиторий проекта](https://github.com/shizacat/TheAbyss.NMEASendLocation)
+
+Как работает.
+
+NMEASendLocation читает гео данные с вашего iPhone/iPad формирует на основе их сообщения NMEA 0183 и передает в навигационное программноге обеспечение (OpenCPN, SignalK server, ...), которое запущено на компьюторе, используя для этого Bluetooth, WiFi или USB. Данные передаются по сети через UDP, потому что для его работы не требуется поддерживать постоянное соединение, в отличие от TCP.
+
+
+
+**Основные функции:**
+
+• Получение текущих координат, скорости и курса с GPS-модуля
+
+• Формирование NMEA 0183 сообщений
+
+• Отправка данных по UDP
+
+• Настройка IP-адреса и порта получателя
+
+• Логирование отправленных сообщений
+
+
+
+**Поддерживаемые NMEA-сообщения:**
+
+• GPGGA - Global Positioning System Fix Data
+
+• GPRMC - Recommended Minimum Specific GNSS Data
+
+• GPVTG - Track Made Good and Ground Speed
+
+
+
+**Как часто происходит отправка сообщений**
+
+Apple не позволяет приложению в фоне постоянно быть активным и сама решает когда ему нужно передать новые координаты. Поэтому частота отправления зависит от обновления положения. Если двигаемся быстро оно происходит часто, медленно реже.
+";

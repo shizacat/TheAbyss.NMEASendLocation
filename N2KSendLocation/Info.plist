@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>location</string>
+		<string>fetch</string>
+	</array>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>App requires location access to send GPS data even in the background.</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>App uses your location to send NMEA data.</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>App needs access to your location always for background transmission.</string>
+</dict>
+</plist>

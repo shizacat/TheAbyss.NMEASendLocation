@@ -1,0 +1,79 @@
+/* Common */
+"done_button" = "Done";
+
+/* Last sent data section */
+"last_sent_data" = "Last Sent Data";
+"time_label" = "Time:";
+"latitude_label" = "Latitude:";
+"longitude_label" = "Longitude:";
+"status_label" = "Status:";
+"send_error" = "Errors when sending";
+"location_error" = "Location Error";
+"stop_sending" = "Stop Sending";
+"start_sending" = "Start Sending";
+"no_time" = "--:--:--";
+"no_coordinate" = "0.000000°";
+
+/* Settings View */
+"udp_settings_header" = "UDP client settings";
+"server_address_label" = "Server Address";
+"port_number_label" = "Port Number";
+"server_address_placeholder" = "192.168.1.1";
+"port_placeholder" = "4123";
+"settings_title" = "Settings";
+/* ___ Error Settings */
+"settings_error_header" = "Error settings";
+"show_error_history_label" = "Show error history";
+
+/* Timer Settings */
+"timer_settings_header" = "Timer settings";
+"enable_timer_label" = "Enable timer";
+"timer_interval_label" = "Timer interval";
+"timer_interval_1s" = "1 second";
+"timer_interval_3s" = "3 seconds";
+"timer_interval_5s" = "5 seconds";
+"timer_interval_10s" = "10 seconds";
+
+/* Info View */
+"app_info_title" = "App Info";
+"app_description" = "
+NMEASendLocation - this app sends GPS coordinates, current speed and course via WiFi using NMEA 0183 protocol. It can replace a USB GPS receiver.
+
+*Version: 1.0*
+
+[Project repository](https://github.com/shizacat/TheAbyss.NMEASendLocation)
+
+How it works.
+
+NMEASendLocation reads geo data from your iPhone/iPad, forms NMEA 0183 messages based on this data and transmits them to navigation software (OpenCPN, SignalK server, etc.) running on a computer, using Bluetooth, WiFi or USB. Data is transmitted over the network via UDP because it doesn't require maintaining a constant connection, unlike TCP.
+
+
+
+**Main features:**
+
+• Getting current coordinates, speed and course from GPS module
+
+• Forming NMEA 0183 messages
+
+• Sending data via UDP
+
+• Configuring receiver IP address and port
+
+• Logging sent messages
+
+
+
+**Supported NMEA messages:**
+
+• GPGGA - Global Positioning System Fix Data
+
+• GPRMC - Recommended Minimum Specific GNSS Data
+
+• GPVTG - Track Made Good and Ground Speed
+
+
+
+**Message sending frequency**
+
+Apple doesn't allow background apps to be constantly active and decides when new coordinates need to be transmitted. Therefore, the sending frequency depends on position updates. If moving quickly, updates occur frequently; if moving slowly, updates are less frequent.
+";

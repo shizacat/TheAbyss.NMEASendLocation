@@ -1,0 +1,583 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		C2284D8E2E3FD2670037EC3C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C2284D752E3FD2650037EC3C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C2284D7C2E3FD2650037EC3C;
+			remoteInfo = N2KSendLocation;
+		};
+		C2284D982E3FD2670037EC3C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C2284D752E3FD2650037EC3C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C2284D7C2E3FD2650037EC3C;
+			remoteInfo = N2KSendLocation;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C2284D7D2E3FD2650037EC3C /* NmeaSendLocation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NmeaSendLocation.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2284D8D2E3FD2670037EC3C /* NmeaSendLocationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NmeaSendLocationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2284D972E3FD2670037EC3C /* NmeaSendLocationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NmeaSendLocationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		C2284DAB2E3FD29E0037EC3C /* Exceptions for "N2KSendLocation" folder in "NmeaSendLocation" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = C2284D7C2E3FD2650037EC3C /* NmeaSendLocation */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		C2284D7F2E3FD2650037EC3C /* N2KSendLocation */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				C2284DAB2E3FD29E0037EC3C /* Exceptions for "N2KSendLocation" folder in "NmeaSendLocation" target */,
+			);
+			path = N2KSendLocation;
+			sourceTree = "<group>";
+		};
+		C2284D902E3FD2670037EC3C /* N2KSendLocationTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = N2KSendLocationTests;
+			sourceTree = "<group>";
+		};
+		C2284D9A2E3FD2670037EC3C /* N2KSendLocationUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = N2KSendLocationUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C2284D7A2E3FD2650037EC3C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2284D8A2E3FD2670037EC3C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2284D942E3FD2670037EC3C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C2284D742E3FD2650037EC3C = {
+			isa = PBXGroup;
+			children = (
+				C2284D7F2E3FD2650037EC3C /* N2KSendLocation */,
+				C2284D902E3FD2670037EC3C /* N2KSendLocationTests */,
+				C2284D9A2E3FD2670037EC3C /* N2KSendLocationUITests */,
+				C2284D7E2E3FD2650037EC3C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C2284D7E2E3FD2650037EC3C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C2284D7D2E3FD2650037EC3C /* NmeaSendLocation.app */,
+				C2284D8D2E3FD2670037EC3C /* NmeaSendLocationTests.xctest */,
+				C2284D972E3FD2670037EC3C /* NmeaSendLocationUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C2284D7C2E3FD2650037EC3C /* NmeaSendLocation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C2284DA12E3FD2670037EC3C /* Build configuration list for PBXNativeTarget "NmeaSendLocation" */;
+			buildPhases = (
+				C2284D792E3FD2650037EC3C /* Sources */,
+				C2284D7A2E3FD2650037EC3C /* Frameworks */,
+				C2284D7B2E3FD2650037EC3C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				C2284D7F2E3FD2650037EC3C /* N2KSendLocation */,
+			);
+			name = NmeaSendLocation;
+			packageProductDependencies = (
+			);
+			productName = N2KSendLocation;
+			productReference = C2284D7D2E3FD2650037EC3C /* NmeaSendLocation.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C2284D8C2E3FD2670037EC3C /* NmeaSendLocationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C2284DA42E3FD2670037EC3C /* Build configuration list for PBXNativeTarget "NmeaSendLocationTests" */;
+			buildPhases = (
+				C2284D892E3FD2670037EC3C /* Sources */,
+				C2284D8A2E3FD2670037EC3C /* Frameworks */,
+				C2284D8B2E3FD2670037EC3C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C2284D8F2E3FD2670037EC3C /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				C2284D902E3FD2670037EC3C /* N2KSendLocationTests */,
+			);
+			name = NmeaSendLocationTests;
+			packageProductDependencies = (
+			);
+			productName = N2KSendLocationTests;
+			productReference = C2284D8D2E3FD2670037EC3C /* NmeaSendLocationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C2284D962E3FD2670037EC3C /* NmeaSendLocationUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C2284DA72E3FD2670037EC3C /* Build configuration list for PBXNativeTarget "NmeaSendLocationUITests" */;
+			buildPhases = (
+				C2284D932E3FD2670037EC3C /* Sources */,
+				C2284D942E3FD2670037EC3C /* Frameworks */,
+				C2284D952E3FD2670037EC3C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C2284D992E3FD2670037EC3C /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				C2284D9A2E3FD2670037EC3C /* N2KSendLocationUITests */,
+			);
+			name = NmeaSendLocationUITests;
+			packageProductDependencies = (
+			);
+			productName = N2KSendLocationUITests;
+			productReference = C2284D972E3FD2670037EC3C /* NmeaSendLocationUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C2284D752E3FD2650037EC3C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					C2284D7C2E3FD2650037EC3C = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					C2284D8C2E3FD2670037EC3C = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = C2284D7C2E3FD2650037EC3C;
+					};
+					C2284D962E3FD2670037EC3C = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = C2284D7C2E3FD2650037EC3C;
+					};
+				};
+			};
+			buildConfigurationList = C2284D782E3FD2650037EC3C /* Build configuration list for PBXProject "NmeaSendLocation" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				ru,
+			);
+			mainGroup = C2284D742E3FD2650037EC3C;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = C2284D7E2E3FD2650037EC3C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C2284D7C2E3FD2650037EC3C /* NmeaSendLocation */,
+				C2284D8C2E3FD2670037EC3C /* NmeaSendLocationTests */,
+				C2284D962E3FD2670037EC3C /* NmeaSendLocationUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C2284D7B2E3FD2650037EC3C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2284D8B2E3FD2670037EC3C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2284D952E3FD2670037EC3C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C2284D792E3FD2650037EC3C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2284D892E3FD2670037EC3C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2284D932E3FD2670037EC3C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C2284D8F2E3FD2670037EC3C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C2284D7C2E3FD2650037EC3C /* NmeaSendLocation */;
+			targetProxy = C2284D8E2E3FD2670037EC3C /* PBXContainerItemProxy */;
+		};
+		C2284D992E3FD2670037EC3C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C2284D7C2E3FD2650037EC3C /* NmeaSendLocation */;
+			targetProxy = C2284D982E3FD2670037EC3C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		C2284D9F2E3FD2670037EC3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C2284DA02E3FD2670037EC3C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C2284DA22E3FD2670037EC3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"N2KSendLocation/Preview Content\"";
+				DEVELOPMENT_TEAM = NY5PYL5BC9;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = N2KSendLocation/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "NMEA Send Location";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.navigation";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need your location to send coordinates";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = TheAbyss.N2KSendLocation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C2284DA32E3FD2670037EC3C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"N2KSendLocation/Preview Content\"";
+				DEVELOPMENT_TEAM = NY5PYL5BC9;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = N2KSendLocation/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "NMEA Send Location";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.navigation";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need your location to send coordinates";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = TheAbyss.N2KSendLocation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C2284DA52E3FD2670037EC3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = TheAbyss.N2KSendLocationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NmeaSendLocation.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/NmeaSendLocation";
+			};
+			name = Debug;
+		};
+		C2284DA62E3FD2670037EC3C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = TheAbyss.N2KSendLocationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NmeaSendLocation.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/NmeaSendLocation";
+			};
+			name = Release;
+		};
+		C2284DA82E3FD2670037EC3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = TheAbyss.N2KSendLocationUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = N2KSendLocation;
+			};
+			name = Debug;
+		};
+		C2284DA92E3FD2670037EC3C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = TheAbyss.N2KSendLocationUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = N2KSendLocation;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C2284D782E3FD2650037EC3C /* Build configuration list for PBXProject "NmeaSendLocation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2284D9F2E3FD2670037EC3C /* Debug */,
+				C2284DA02E3FD2670037EC3C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C2284DA12E3FD2670037EC3C /* Build configuration list for PBXNativeTarget "NmeaSendLocation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2284DA22E3FD2670037EC3C /* Debug */,
+				C2284DA32E3FD2670037EC3C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C2284DA42E3FD2670037EC3C /* Build configuration list for PBXNativeTarget "NmeaSendLocationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2284DA52E3FD2670037EC3C /* Debug */,
+				C2284DA62E3FD2670037EC3C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C2284DA72E3FD2670037EC3C /* Build configuration list for PBXNativeTarget "NmeaSendLocationUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2284DA82E3FD2670037EC3C /* Debug */,
+				C2284DA92E3FD2670037EC3C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C2284D752E3FD2650037EC3C /* Project object */;
+}
