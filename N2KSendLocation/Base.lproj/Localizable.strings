@@ -34,6 +34,13 @@
 "timer_interval_5s" = "5 seconds";
 "timer_interval_10s" = "10 seconds";
 
+/* Heading Settings */
+"heading_settings_header" = "Heading settings";
+"enable_heading_label" = "Enable sending heading";
+"heading_type_label" = "Heading type";
+"heading_type_magnetic" = "Magnetic";
+"heading_type_true" = "True";
+
 /* Info View */
 "app_info_title" = "App Info";
 "app_description" = "

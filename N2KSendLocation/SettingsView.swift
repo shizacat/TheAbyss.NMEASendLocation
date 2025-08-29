@@ -6,6 +6,8 @@ struct SettingsView: View {
     @AppStorage("showErrorHistory") private var showErrorHistory = false
     @AppStorage("timerEnabled") private var timerEnabled = false
     @AppStorage("timerInterval") private var timerInterval = 3
+    @AppStorage("headingEnabled") private var headingEnabled = false
+    @AppStorage("headingType") private var headingType = "true"  // "magnetic" or "true"
     @Environment(\.dismiss) private var dismiss
     
     var body: some View {
@@ -53,7 +55,22 @@ struct SettingsView: View {
                         Text(NSLocalizedString("show_error_history_label", comment: "Show error history toggle label"))
                     }
                 }
-                
+
+                Section(header: Text(NSLocalizedString("heading_settings_header", comment: "Heading settings section header"))
+                    .font(.headline)
+                    .textCase(.none)
+                ) {
+                    Toggle(isOn: $headingEnabled) {
+                        Text(NSLocalizedString("enable_heading_label", comment: "Enable heading toggle label"))
+                    }
+                    
+                    Picker(selection: $headingType, label: Text(NSLocalizedString("heading_type_label", comment: "Heading type picker label"))) {
+                        Text(NSLocalizedString("heading_type_magnetic", comment: "Magnetic heading")).tag("magnetic")
+                        Text(NSLocalizedString("heading_type_true", comment: "True heading")).tag("true")
+                    }
+                    .disabled(!headingEnabled)
+                }
+
                 Section(header: Text(NSLocalizedString("timer_settings_header", comment: "Timer settings section header"))
                     .font(.headline)
                     .textCase(.none)

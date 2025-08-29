@@ -34,6 +34,13 @@
 "timer_interval_5s" = "5 секунд";
 "timer_interval_10s" = "10 секунд";
 
+/* Heading Settings */
+"heading_settings_header" = "Настройки курса";
+"enable_heading_label" = "Включить отправку курса";
+"heading_type_label" = "Тип курса";
+"heading_type_magnetic" = "Магнитный";
+"heading_type_true" = "Истинный";
+
 /* Info View */
 "app_info_title" = "О приложении";
 "app_description" = "
