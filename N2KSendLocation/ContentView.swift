@@ -22,6 +22,7 @@ class LocationSender: NSObject, ObservableObject, CLLocationManagerDelegate {
     private var connection: NWConnection?
     private var timer: Timer?
     private var manualSendInProgress = false
+    private var lastHeadingUpdate = Date.distantPast
     @AppStorage("udpClientHost") private var host: String = "192.168.1.1"
     @AppStorage("udpClientPort") private var port: Int = 10110
     @AppStorage("showErrorHistory") var showErrorHistory = false
@@ -78,6 +79,7 @@ class LocationSender: NSObject, ObservableObject, CLLocationManagerDelegate {
         locationManager.requestAlwaysAuthorization()
         locationManager.startUpdatingLocation()
         if CLLocationManager.headingAvailable() {
+            locationManager.headingFilter = 0.5  // Update every 0.5 degree
             locationManager.startUpdatingHeading()
         }
         
@@ -247,6 +249,11 @@ class LocationSender: NSObject, ObservableObject, CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didUpdateHeading newHeading: CLHeading) {
         var message: String
         var headingValue: Double
+        let now = Date()
+
+        // Throttle heading updates to 10 Hz
+        guard now.timeIntervalSince(lastHeadingUpdate) >= 1/10 else {return}
+        lastHeadingUpdate = now
         
         if headingType == .true {
             // True heading message: $GPHDT,123.456,T*00
