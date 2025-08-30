@@ -6,6 +6,7 @@
 "time_label" = "Time:";
 "latitude_label" = "Latitude:";
 "longitude_label" = "Longitude:";
+"heading_label" = "Heading:";
 "status_label" = "Status:";
 "send_error" = "Errors when sending";
 "location_error" = "Location Error";

@@ -6,6 +6,7 @@
 "time_label" = "Время:";
 "latitude_label" = "Широта:";
 "longitude_label" = "Долгота:";
+"heading_label" = "Курс:";
 "status_label" = "Статус:";
 "send_error" = "Ошибки при отправке";
 "location_error" = "Ошибка геолокации";

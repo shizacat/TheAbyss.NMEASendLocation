@@ -1,10 +1,5 @@
 import SwiftUI
 
-enum HeadingType: String, CaseIterable {
-    case magnetic = "magnetic"
-    case `true` = "true"
-}
-
 struct SettingsView: View {
     @AppStorage("udpClientPort") private var tcpClientPort: Int = 4123
     @AppStorage("udpClientHost") private var tcpClientHost: String = "192.168.1.1"
