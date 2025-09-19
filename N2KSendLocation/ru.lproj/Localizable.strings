@@ -61,6 +61,8 @@ NMEASendLocation читает гео данные с вашего iPhone/iPad ф
 
 • Получение текущих координат, скорости и курса относительно грунта (CoG) с GPS-модуля
 
+• Получение направления движения от магнитометра, и отправка его как курса (heading) (магнитного или истинного)
+
 • Формирование NMEA 0183 сообщений
 
 • Отправка данных по UDP
@@ -78,6 +80,10 @@ NMEASendLocation читает гео данные с вашего iPhone/iPad ф
 • GPRMC - Recommended Minimum Specific GNSS Data
 
 • GPVTG - Track Made Good and Ground Speed
+
+• GPHDM - Heading, Magnetic
+
+• GPHDT - Heading, True
 
 
 

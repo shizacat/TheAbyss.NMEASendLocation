@@ -61,6 +61,8 @@ NMEASendLocation reads geo data from your iPhone/iPad, forms NMEA 0183 messages 
 
 • Getting current coordinates, speed and course over ground (CoG) from GPS module
 
+• Getting the direction of motion from the magnetometer, and sending it as heading (magnetic or true)
+
 • Forming NMEA 0183 messages
 
 • Sending data via UDP
@@ -78,6 +80,10 @@ NMEASendLocation reads geo data from your iPhone/iPad, forms NMEA 0183 messages 
 • GPRMC - Recommended Minimum Specific GNSS Data
 
 • GPVTG - Track Made Good and Ground Speed
+
+• GPHDM - Heading, Magnetic
+
+• GPHDT - Heading, True
 
 
 
