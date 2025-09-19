@@ -8,6 +8,7 @@
 import SwiftUI
 import CoreLocation
 import Network
+import Foundation
 
 enum ConnectionStatus: String {
     case disconnected = "Disconnected"
@@ -21,16 +22,20 @@ class LocationSender: NSObject, ObservableObject, CLLocationManagerDelegate {
     private var connection: NWConnection?
     private var timer: Timer?
     private var manualSendInProgress = false
+    private var lastHeadingUpdate = Date.distantPast
     @AppStorage("udpClientHost") private var host: String = "192.168.1.1"
     @AppStorage("udpClientPort") private var port: Int = 10110
     @AppStorage("showErrorHistory") var showErrorHistory = false
     @AppStorage("timerEnabled") var timerEnabled = false
     @AppStorage("timerInterval") var timerInterval = 1
+    @AppStorage("headingEnabled") var headingEnabled = false
+    @AppStorage("headingType") var headingType: HeadingType = .true
     @Published var isSending = false
     @Published var lastSentCoordinates = ""
     @Published var lastSentTime: Date?
     @Published var lastSentLatitude: Double?
     @Published var lastSentLongitude: Double?
+    @Published var lastSentHeading: Double?
     @Published var connectionStatus: ConnectionStatus = .disconnected
     @Published var lastErrors: [String] = []
     
@@ -73,6 +78,10 @@ class LocationSender: NSObject, ObservableObject, CLLocationManagerDelegate {
         setupConnection()
         locationManager.requestAlwaysAuthorization()
         locationManager.startUpdatingLocation()
+        if CLLocationManager.headingAvailable() {
+            locationManager.headingFilter = 0.5  // Update every 0.5 degree
+            locationManager.startUpdatingHeading()
+        }
         
         if timerEnabled {
             startTimer()
@@ -103,10 +112,15 @@ class LocationSender: NSObject, ObservableObject, CLLocationManagerDelegate {
 
         // Use existing locationManager(_:didUpdateLocations:) logic
         self.locationManager(self.locationManager, didUpdateLocations: [location])
+
+        // Use existing locationManager(_:didUpdateHeading:) logic
+        self.locationManager(self.locationManager, didUpdateHeading: self.locationManager.heading ?? CLHeading())
     }
     
     private func stopSending() {
         locationManager.stopUpdatingLocation()
+        locationManager.startUpdatingHeading()
+
         connection?.cancel()
         isSending = false
         timer?.invalidate()
@@ -231,6 +245,39 @@ class LocationSender: NSObject, ObservableObject, CLLocationManagerDelegate {
             }))
         }
     }
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateHeading newHeading: CLHeading) {
+        var message: String
+        var headingValue: Double
+        let now = Date()
+
+        // Throttle heading updates to 10 Hz
+        guard now.timeIntervalSince(lastHeadingUpdate) >= 1/10 else {return}
+        lastHeadingUpdate = now
+        
+        if headingType == .true {
+            // True heading message: $GPHDT,123.456,T*00
+            message = String(format: "GPHDT,%.3f,T", newHeading.magneticHeading)
+            headingValue = newHeading.magneticHeading
+        } else {
+            // Magnetic heading message: $GPHDM,123.456,M*00
+            message = String(format: "GPHDM,%.3f,M", newHeading.trueHeading)
+            headingValue = newHeading.trueHeading
+        }
+        
+        let checksum = message.utf8.reduce(0) { $0 ^ UInt8($1) }
+        message = "$\(message)*\(String(format: "%02X", checksum))\n"
+        connection?.send(content: message.data(using: .utf8), completion: .contentProcessed({ [weak self] error in
+            DispatchQueue.main.async {
+                if let error = error {
+                    self?.addError("Send error: \(error.localizedDescription)")
+                } else {
+                    self?.lastSentHeading = headingValue
+                }
+            }
+        }))
+    }
+        
 }
 
 struct ContentView: View {
@@ -278,6 +325,18 @@ struct ContentView: View {
                                 .font(.system(.body, design: .monospaced))
                         } else {
                             Text("0.000000°")
+                                .font(.system(.body, design: .monospaced))
+                        }
+                    }
+                    
+                    HStack {
+                        Text(NSLocalizedString("heading_label", comment: ""))
+                        Spacer()
+                        if let heading = sender.lastSentHeading {
+                            Text(String(format: "%.1f°", heading))
+                                .font(.system(.body, design: .monospaced))
+                        } else {
+                            Text("0.0°")
                                 .font(.system(.body, design: .monospaced))
                         }
                     }

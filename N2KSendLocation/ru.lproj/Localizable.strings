@@ -6,6 +6,7 @@
 "time_label" = "Время:";
 "latitude_label" = "Широта:";
 "longitude_label" = "Долгота:";
+"heading_label" = "Курс:";
 "status_label" = "Статус:";
 "send_error" = "Ошибки при отправке";
 "location_error" = "Ошибка геолокации";
@@ -34,6 +35,13 @@
 "timer_interval_5s" = "5 секунд";
 "timer_interval_10s" = "10 секунд";
 
+/* Heading Settings */
+"heading_settings_header" = "Настройки курса";
+"enable_heading_label" = "Включить отправку курса";
+"heading_type_label" = "Тип курса";
+"heading_type_magnetic" = "Магнитный";
+"heading_type_true" = "Истинный";
+
 /* Info View */
 "app_info_title" = "О приложении";
 "app_description" = "
@@ -53,6 +61,8 @@ NMEASendLocation читает гео данные с вашего iPhone/iPad ф
 
 • Получение текущих координат, скорости и курса относительно грунта (CoG) с GPS-модуля
 
+• Получение направления движения от магнитометра, и отправка его как курса (heading) (магнитного или истинного)
+
 • Формирование NMEA 0183 сообщений
 
 • Отправка данных по UDP
@@ -70,6 +80,10 @@ NMEASendLocation читает гео данные с вашего iPhone/iPad ф
 • GPRMC - Recommended Minimum Specific GNSS Data
 
 • GPVTG - Track Made Good and Ground Speed
+
+• GPHDM - Heading, Magnetic
+
+• GPHDT - Heading, True
 
 
 

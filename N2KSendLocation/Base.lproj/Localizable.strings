@@ -6,6 +6,7 @@
 "time_label" = "Time:";
 "latitude_label" = "Latitude:";
 "longitude_label" = "Longitude:";
+"heading_label" = "Heading:";
 "status_label" = "Status:";
 "send_error" = "Errors when sending";
 "location_error" = "Location Error";
@@ -34,6 +35,13 @@
 "timer_interval_5s" = "5 seconds";
 "timer_interval_10s" = "10 seconds";
 
+/* Heading Settings */
+"heading_settings_header" = "Heading settings";
+"enable_heading_label" = "Enable sending heading";
+"heading_type_label" = "Heading type";
+"heading_type_magnetic" = "Magnetic";
+"heading_type_true" = "True";
+
 /* Info View */
 "app_info_title" = "App Info";
 "app_description" = "
@@ -53,6 +61,8 @@ NMEASendLocation reads geo data from your iPhone/iPad, forms NMEA 0183 messages 
 
 • Getting current coordinates, speed and course over ground (CoG) from GPS module
 
+• Getting the direction of motion from the magnetometer, and sending it as heading (magnetic or true)
+
 • Forming NMEA 0183 messages
 
 • Sending data via UDP
@@ -70,6 +80,10 @@ NMEASendLocation reads geo data from your iPhone/iPad, forms NMEA 0183 messages 
 • GPRMC - Recommended Minimum Specific GNSS Data
 
 • GPVTG - Track Made Good and Ground Speed
+
+• GPHDM - Heading, Magnetic
+
+• GPHDT - Heading, True
 
 
 
